@@ -35,11 +35,11 @@ const RoutesListPage: NextPage<RoutesListPageProps> = ({routes}) => {
   return (
     <div>
       <Head>
-        <title>Rotas</title>
+        <title>Desafio 2 | Imersão FullCycle 3.0</title>
       </Head>
       <Container maxWidth="lg">
         <Typography style={{ padding: 20 }} component="h1" variant="h3" color="textPrimary" align="center" gutterBottom>
-          Produtos
+          A melhores rotas pós pandemia 
         </Typography>
         <Grid container direction="row" justifyContent="center" alignItems="center" spacing={3}>
           {routes.map((route, key) => (
@@ -52,7 +52,7 @@ const RoutesListPage: NextPage<RoutesListPageProps> = ({routes}) => {
                   className={classes.cardHeader}
                 />
                 <CardContent>
-                <List dense={dense} >
+                <List dense={dense} style={{ padding: 20 }} >
                   {[route.startPosition, route.endPosition].map((location, key) => (
                   <ListItem key={key} >
                     <ListItemIcon>
